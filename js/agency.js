@@ -35,4 +35,17 @@
     }
   });
 
+  function hello(){
+    $('#hello').toggleClass('fadeOut');
+    // $('body').toggleClass('nav-no-scroll');
+  };
+
+  function stats(){
+    $('#welcome').toggleClass('fadeOut');
+    $('body').toggleClass('nav-no-scroll');
+  };
+
+  setTimeout(hello, 3000);
+  setTimeout(stats, 6000);
+
 })(jQuery); // End of use strict
